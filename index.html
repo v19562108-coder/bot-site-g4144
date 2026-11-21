@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Кофейня "Утренний Бриз"</title>
+<style>
+body{font-family:sans-serif;background:#f4eada;color:#2b1d12;margin:0;padding:20px}
+.card{background:#fff;border-radius:12px;padding:15px;margin:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);text-align:center;width:260px}
+.emoji{font-size:3em;display:block}
+#petBtn{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:#d8c6ac;border:none;font-size:24px;cursor:pointer}
+</style></head><body>
+<header style="text-align:center;padding:30px 0"><h1>Кофейня "Утренний Бриз"</h1><p>Кофе, который будит вдохновение</p></header>
+<main style="display:flex;flex-wrap:wrap;justify-content:center;max-width:900px;margin:0 auto">
+<div class="card"><span class="emoji">☕️</span><h3>Капучино "Бриз"</h3><p>Нежная пена, двойной эспрессо, корица</p><b>250 ₽</b></div>
+<div class="card"><span class="emoji">🥐</span><h3>Латте "Облако"</h3><p>Мягкий вкус, идеально для завтрака</p><b>280 ₽</b></div>
+<div class="card"><span class="emoji">🫘</span><h3>Раф "Цитрус"</h3><p>Сливки, эспрессо, лимонный сироп</p><b>320 ₽</b></div>
+</main>
+<footer style="text-align:center;margin-top:40px;color:#666">
+<h3>Контакты</h3><p>📍 Москва, ул. Кофейная, 12с3</p><p>📞 +7 (999) 123-45-67</p><p>✉️ hello@morningbreeze.ru</p><p>🕒 Пн-Пт 07:00–22:00, Сб-Вс 09:00–23:00</p>
+</footer>
+<button id="petBtn">☕</button>
+<script>const b=document.getElementById('petBtn');b.onmouseover=()=>{b.style.left=Math.random()*(innerWidth-60)+'px';b.style.top=Math.random()*(innerHeight-60)+'px'}</script>
+</body></html>
